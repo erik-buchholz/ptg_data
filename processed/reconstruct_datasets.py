@@ -68,7 +68,10 @@ def load_from_chunks(dataset: Datasets, compare: bool = False) -> np.ndarray:
             log.warning(f"Dataset {dataset} already exists. Saving to '{path}' instead.")
         # Compare the reconstructed dataset with the original
         original = np.load(difftraj_paths[dataset])
-        printc(f"Loaded Dataset {dataset} matches original:", np.array_equal(np.concatenate(chunks), original))
+        match = np.array_equal(np.concatenate(chunks), original)
+        printc(f"Loaded Dataset {dataset} matches original:", match)
+        if not match:
+            raise ValueError("Reconstructed dataset does not match the original.")
     if not compare:
         np.save(path, np.concatenate(chunks))
         log.info(f"Saved reconstructed dataset to {path}")
