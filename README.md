@@ -1,7 +1,11 @@
 # Dataset Description
 
-This directory contains the data used for our evaluation.
+This directory contains the data used for the evaluation of the PrivTrajGen repository.
+This repository is ment to be used in combination with the [PrivTrajGen](https://github.com/erik-buchholz/PrivTrajGen)
+and might not work as expected without it. <!-- TODO: Fix Link -->
 The data is described below.
+
+[1] [PrivTrajGen Repository](https://github.com/erik-buchholz/PrivTrajGen)
 
 ## Table Of Contents
 
@@ -49,7 +53,8 @@ All three files are already contained in this repository.
 | `train_latlon.csv` | 2,052                  | 44,809           | [LSTM-TrajGAN](https://github.com/GeoDS/LSTM-TrajGAN/blob/master/data/train_latlon.csv) |
 | `all_latlon.csv`   | 3,079                  | 66,962           | /                                                                                       |
 
-The conversion of the raw data into the npy format used in the evaluation is described in the notebook `notebooks/fs_nyc.ipynb`.
+The conversion of the raw data into the npy format used in the evaluation is described in the notebook
+`notebooks/fs_nyc.ipynb` which is part of the PrivTrajGen repository [1].
 
 
 ### GeoLife
@@ -88,28 +93,14 @@ data/
 #### Pre-Processing
 
 The GeoLife dataset requires some pre-processing before it can be used.
-For pre-processing, you can use the script `stg.datasets.geolife.py`.
+For pre-processing, you can use the script `stg.datasets.geolife.py` which is provided as part of the 
+[SoK-TrajGen](https://github.com/erik-buchholz/SoK-TrajGen) repository.
+Refer to this [Readme](https://github.com/erik-buchholz/SoK-TrajGen/tree/main/data) for instructions.
 
-To display all available options, run (from the repository's root directory):
-
-```shell
-python -m stg.datasets.geolife --help
-```
-
-The script performs the pre-processing used for the evaluation in the paper by default:
-
-```shell
-python -m stg.datasets.geolife
-```
-
-If the default pre-processing is used, the resulting dataset will be stored
-in `data/geolife_FIFTH-RING_5_60_200_TRUNCATE`.
-
-After that, consider `notebooks/geolife.ipynb` for the conversion into the npy format used in the evaluation.
 
 ### Porto
 
 **The preprocessed version of the dataset is included in `data/processed/`, such that the preprocessing is optional.**
 
 The raw Porto dataset is available at [Kaggle](https://www.kaggle.com/c/pkdd-15-predict-taxi-service-trajectory-i/data).
-The preprocessing of the dataset is detailed in `notebooks/porto_taxi.ipynb`.
+The preprocessing of the dataset is detailed in `notebooks/porto_taxi.ipynb` of the PrivTrajGen repository [1].
