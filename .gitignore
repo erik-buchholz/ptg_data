@@ -10,6 +10,7 @@ porto_normalised_interpolated.npy
 # Folders that SHOULD NOT be committed and pushed to your repository
 # If you put any files inside the folders below, it will NOT be committed
 mnist/
+fs_large/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
