@@ -11,6 +11,8 @@ porto_normalised_interpolated.npy
 # If you put any files inside the folders below, it will NOT be committed
 mnist/
 fs_large/
+folds/porto/10-fold/
+folds/porto/20-fold/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
