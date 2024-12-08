@@ -2,16 +2,18 @@
 
 This directory contains the data used for the evaluation of the PrivTrajGen repository.
 This repository is ment to be used in combination with the [PrivTrajGen](https://github.com/erik-buchholz/PrivTrajGen)
-and might not work as expected without it. <!-- TODO: Fix Link -->
+and might not work as expected without it.
 The data is described below.
 
 [1] [PrivTrajGen Repository](https://github.com/erik-buchholz/PrivTrajGen)
+<!-- TODO: Fix Link -->
 
 ## Table Of Contents
 
 <!-- TOC -->
 * [Dataset Description](#dataset-description)
   * [Table Of Contents](#table-of-contents)
+  * [Citation](#citation)
   * [Preprocessed Datasets](#preprocessed-datasets)
   * [Raw Datasets](#raw-datasets)
     * [Foursquare New York City (FS NYC)](#foursquare-new-york-city-fs-nyc)
@@ -19,8 +21,15 @@ The data is described below.
       * [Download of Raw Dataset](#download-of-raw-dataset)
       * [Pre-Processing](#pre-processing)
     * [Porto](#porto)
-    * [License](#license)
+  * [Contact](#contact)
+  * [Acknowledgements](#acknowledgements)
+  * [References](#references)
+  * [License](#license)
 <!-- TOC -->
+
+## Citation
+
+TBD
 
 ## Preprocessed Datasets
 
@@ -106,7 +115,48 @@ Refer to this [Readme](https://github.com/erik-buchholz/SoK-TrajGen/tree/main/da
 The raw Porto dataset is available at [Kaggle](https://www.kaggle.com/c/pkdd-15-predict-taxi-service-trajectory-i/data).
 The preprocessing of the dataset is detailed in `notebooks/porto_taxi.ipynb` of the PrivTrajGen repository [1].
 
-### License
+## Contact
+
+**Author:** [Erik Buchholz](https://www.erikbuchholz.de) ([e.buchholz@unsw.edu.au](mailto:e.buchholz@unsw.edu.au))
+
+**Supervision:**
+
+- [Prof. Salil Kanhere](https://salilkanhere.net/)
+- [Dr. Surya Nepal](https://people.csiro.au/N/S/Surya-Nepal)
+
+**Involved Researchers:**
+
+- [Dr. Sharif Abuadbba](https://people.csiro.au/A/S/sharif-abuadbba)
+- [Dr. David D. Nguyen](https://people.csiro.au/w/s/shuo-wang)
+- [Dr. Natasha Fernandes](https://researchers.mq.edu.au/en/persons/natasha-fernandes)
+
+## Acknowledgements
+
+The authors would like to thank the University of New South Wales,
+the Commonwealth of Australia, and the Cybersecurity Cooperative Research Centre Limited, whose activities are partially
+funded by the Australian Government’s Cooperative Research Centres Programme, for their support.
+
+## References
+
+We would like to thank the following authors for sharing their datasets and/or code that we used in our research:
+
+1. Rao, J., Gao, S.*, Kang, Y. and Huang, Q. (2020).
+"LSTM-TrajGAN: A Deep Learning Approach to Trajectory Privacy Protection."
+In the Proceedings of the 11th International Conference on Geographic Information Science (GIScience 2021),
+12:1--12:17, doi: https://doi.org/10.4230/LIPIcs.GIScience.2021.I.12
+2. Dingqi Yang, Daqing Zhang, V. W. Zheng, and Zhiyong Yu,
+"Modeling user activity preference by leveraging user spatial temporal characteristics in LBSNs,"
+IEEE Trans. Syst., Man, Cybern., Syst., vol. 45, no. 1, pp. 129–142, Jan. 2015,
+doi: https://doi.org/10.1109/TSMC.2014.2327053
+3. Y. Zheng, L. Zhang, X. Xie, and W.-Y. Ma,
+"Mining interesting locations and travel sequences from GPS trajectories," in Proceedings of the 18th international
+conference on World wide web, in WWW ’09. New York, NY, USA: Association for Computing Machinery, Apr. 2009,
+pp. 791–800. doi: https://doi.org/10.1145/1526709.1526816
+4. L. Moreira-Matias, M. Ferreira, J. Mendes-Moreira, L. L., and J. J.,
+"Porto taxi - taxi service trajectory - prediction challenge, ECML PKDD 2015."
+UCI Machine Learning Repository, 2015. doi: https://doi.org/10.24432/C55W25
+
+## License
 
 CSIRO Open Source Software Licence Agreement (variation of the BSD / MIT License)
 
@@ -162,7 +212,7 @@ ___________________________________________________________________
 Foursquare NYC Dataset Preprocessed by Rao et al. (2020)
 
 Rao, J., Gao, S.*, Kang, Y. and Huang, Q. (2020).
-LSTM-TrajGAN: A Deep Learning Approach to Trajectory Privacy Protection.
+"LSTM-TrajGAN: A Deep Learning Approach to Trajectory Privacy Protection."
 In the Proceedings of the 11th International Conference on Geographic Information Science (GIScience 2021),
 12:1--12:17, doi: https://doi.org/10.4230/LIPIcs.GIScience.2021.I.12
 
@@ -171,7 +221,7 @@ ___________________________________________________________________
 Above Dataset is derived from the original Foursquare NYC dataset:
 
 Dingqi Yang, Daqing Zhang, V. W. Zheng, and Zhiyong Yu,
-“Modeling user activity preference by leveraging user spatial temporal characteristics in LBSNs,”
+"Modeling user activity preference by leveraging user spatial temporal characteristics in LBSNs,"
 IEEE Trans. Syst., Man, Cybern., Syst., vol. 45, no. 1, pp. 129–142, Jan. 2015,
 doi: https://doi.org/10.1109/TSMC.2014.2327053
 
@@ -180,7 +230,7 @@ ___________________________________________________________________
 Geolife Dataset
 
 Y. Zheng, L. Zhang, X. Xie, and W.-Y. Ma,
-“Mining interesting locations and travel sequences from GPS trajectories,” in Proceedings of the 18th international
+"Mining interesting locations and travel sequences from GPS trajectories," in Proceedings of the 18th international
 conference on World wide web, in WWW ’09. New York, NY, USA: Association for Computing Machinery, Apr. 2009,
 pp. 791–800. doi: https://doi.org/10.1145/1526709.1526816
 
@@ -190,7 +240,7 @@ ___________________________________________________________________
 Porto Taxi Service Trajectory Dataset
 
 L. Moreira-Matias, M. Ferreira, J. Mendes-Moreira, L. L., and J. J.,
-“Porto taxi - taxi service trajectory - prediction challenge, ECML PKDD 2015.”
+"Porto taxi - taxi service trajectory - prediction challenge, ECML PKDD 2015."
 UCI Machine Learning Repository, 2015. doi: https://doi.org/10.24432/C55W25
 
 Available at: https://archive.ics.uci.edu/dataset/339/taxi+service+trajectory+prediction+challenge+ecml+pkdd+2015
