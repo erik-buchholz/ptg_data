@@ -1,12 +1,11 @@
 # Dataset Description
 
 This directory contains the data used for the evaluation of the PrivTrajGen repository.
-This repository is ment to be used in combination with the [PrivTrajGen](https://github.com/erik-buchholz/PrivTrajGen)
+This repository is ment to be used in combination with the [PrivTrajGen](https://github.com/erik-buchholz/CostOfTrajectoryPrivacy)
 and might not work as expected without it.
 The data is described below.
 
-[1] [PrivTrajGen Repository](https://github.com/erik-buchholz/PrivTrajGen)
-<!-- TODO: Fix Link -->
+[1] [PrivTrajGen Repository](https://github.com/erik-buchholz/CostOfTrajectoryPrivacy)
 
 ## Table Of Contents
 
